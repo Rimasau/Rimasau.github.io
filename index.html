@@ -28,6 +28,7 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -113,6 +114,41 @@
         <h2>About</h2>
         <p>Esu kūrybinga ir smalsi siela, visą laiką siekianti naujų žinių ir patirčių. Mano pagrindinė varomoji jėga – nuolatinis asmeninis augimas ir gebėjimas matyti galimybę ten, kur kiti nemato. Vertinu logiką ir struktūrą, bet taip pat mane įkvepia menas ir žmogiškosios emocijos. Esanti uolība leidžia man įgyvendinti sudėtingus uždavinius, o lankstumas – prisitaikyti prie besikeičiančių aplinkybių. Mano tikslas – ne tik suprasti pasaulį, bet ir palikti jame reikšmingą pėdsaką, padedant kitiems ir kurdama kažką vertingo. Esu nuolatinis savęs paieškų keliautojas.</p>
       </div><!-- End Section Title -->
+
+      <div class="custom-lists">
+        <h3>Mano Įgūdžiai</h3>
+        
+        <!-- Numeruotas sąrašas -->
+        <ol class="numbered-list">
+            <li>Programavimas
+                <ul class="nested-list">
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                </ul>
+            </li>
+            <li>Dizainas
+                <ul class="nested-list">
+                    <li>UI/UX dizainas</li>
+                    <li>Grafinis dizainas</li>
+                </ul>
+            </li>
+            <li>Projektų valdymas</li>
+        </ol>
+
+        <!-- Nenumeruotas sąrašas -->
+        <h3>Paslaugos</h3>
+        <ul class="bulleted-list">
+            <li>Svetainių kūrimas
+                <ul>
+                    <li>Elektroninės parduotuvės</li>
+                    <li>Įmonių svetainės</li>
+                </ul>
+            </li>
+            <li>SEO optimizavimas</li>
+            <li>Priežiūra ir palaikymas</li>
+        </ul>
+    </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -501,77 +537,116 @@
     </section><!-- /Portfolio Section -->
 
     <!-- Services Section -->
-    <section id="services" class="services section">
+    <!-- Services Section -->
+<section id="services" class="services section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-      </div><!-- End Section Title -->
+    </div><!-- End Section Title -->
 
-      <div class="container">
+    <div class="container">
 
+        <!-- Esami service item'ai lieka -->
         <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>
-              <video width="320" height="240" autoplay>
-              <source src="assets/media/7534244-hd_1920_1080_25fps.mp4" type="video/mp4">
-</video>
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+                <div>
+                    <h4 class="title"><a href="service-details.html" class="stretched-link">Lorem Ipsum</a></h4>
+                    <video width="320" height="240" autoplay>
+                        <source src="assets/media/7534244-hd_1920_1080_25fps.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
-          </div>
-          <!-- End Service Item -->
+            <!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a></h4>
-            <audio controls>
-            <source src="assets/media/quartz-clock-ticking-one-minute-253102.mp3" type="audio/mpeg">
-</audio>
-            </div>
-          </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+                <div>
+                    <h4 class="title"><a href="service-details.html" class="stretched-link">Dolor Sitema</a></h4>
+                    <audio controls>
+                        <source src="assets/media/quartz-clock-ticking-one-minute-253102.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/BoUVIhtqjAw?si=RHg6sg99MKYOLED9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-            </div>
-          </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+                <div>
+                    <h4 class="title"><a href="service-details.html" class="stretched-link">Sed ut perspiciatis</a></h4>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BoUVIhtqjAw?si=RHg6sg99MKYOLED9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-            </div>
-          </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div>
+                <div>
+                    <h4 class="title"><a href="service-details.html" class="stretched-link">Magni Dolores</a></h4>
+                    <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-            </div>
-          </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div>
+                <div>
+                    <h4 class="title"><a href="service-details.html" class="stretched-link">Nemo Enim</a></h4>
+                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                </div>
+            </div><!-- End Service Item -->
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
-            <div>
-              <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-            </div>
-          </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+                <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div>
+                <div>
+                    <h4 class="title"><a href="service-details.html" class="stretched-link">Eiusmod Tempor</a></h4>
+                    <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                </div>
+            </div><!-- End Service Item -->
 
         </div>
 
-      </div>
+        <!-- PRIDĖTA PASLAUGŲ LENTELĖ -->
+        <div class="services-table-section" data-aos="fade-up" data-aos-delay="700">
+            <h3 class="text-center mb-4">Paslaugų kainoraštis</h3>
+            <div class="services-table-container">
+                <table class="services-table">
+                    <thead>
+                        <tr>
+                            <th>Paslauga</th>
+                            <th>Aprašymas</th>
+                            <th>Kaina</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Svetainių kūrimas</td>
+                            <td>Individualių svetainių dizaino ir programavimo paslaugos</td>
+                            <td>500 €</td>
+                        </tr>
+                        <tr>
+                            <td>SEO optimizavimas</td>
+                            <td>Paieškos sistemų optimizavimas ir pozicijų gerinimas</td>
+                            <td>300 €</td>
+                        </tr>
+                        <tr>
+                            <td>Priežiūra ir palaikymas</td>
+                            <td>Nuolatinė svetainės priežiūra ir techninė pagalba</td>
+                            <td>100 €/mėn.</td>
+                        </tr>
+                        <tr>
+                            <td>Elektroninės parduotuvės</td>
+                            <td>Internetinių parduotuvių kūrimas ir integravimas</td>
+                            <td>800 €</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-    </section><!-- /Services Section -->
+    </div>
 
+</section><!-- /Services Section -->
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
 
