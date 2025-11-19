@@ -5,6 +5,7 @@ body {
 }
 
 
+
 h1 {
     font-size: 2.8rem !important;
     font-weight: 800 !important;
@@ -70,7 +71,7 @@ h6 {
     font-family: 'Poppins' !important;
 }
 
-/* Pastraipų stilius */
+
 p {
     font-size: 1.05rem !important;
     line-height: 1.8 !important;
@@ -114,6 +115,14 @@ p {
     margin-bottom: 8px !important;
     font-family: 'Poppins' !important;
 }
+
+#navmenu ul li {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeNav 0.8s ease forwards;
+}
+
+
 
 .navmenu ul li a:hover {
     background: linear-gradient(135deg, #25a0a8, #dbae34) !important;
@@ -543,3 +552,186 @@ a:active {
 .services-table tbody tr:last-child td {
     border-bottom: none;
 }
+
+
+
+#navmenu ul li {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeNav 0.8s ease forwards;
+}
+
+#navmenu ul li:nth-child(1) { animation-delay: 0.1s; }
+#navmenu ul li:nth-child(2) { animation-delay: 0.2s; }
+#navmenu ul li:nth-child(3) { animation-delay: 0.3s; }
+#navmenu ul li:nth-child(4) { animation-delay: 0.4s; }
+#navmenu ul li:nth-child(5) { animation-delay: 0.5s; }
+#navmenu ul li:nth-child(6) { animation-delay: 0.6s; }
+#navmenu ul li:nth-child(7) { animation-delay: 0.7s; }
+
+@keyframes fadeNav {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#navmenu a .navicon {
+    display: inline-block;
+    transition: transform 0.4s ease;
+}
+
+#navmenu a:hover .navicon {
+    animation: spinIcon 0.6s ease forwards;
+}
+
+@keyframes spinIcon {
+    0%   { transform: rotate(0deg); }
+    50%  { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+}
+
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #9e0c0c !important;
+    border-top-color: #dc1fe2 !important;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+.services {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.services::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        135deg,
+        #a634db,
+        #2980b9,
+        #e74c3c,
+        #f1c40f
+    );
+
+    background-size: 300% 300%;
+    animation: servicesGradient 12s ease infinite;
+
+    z-index: -1;
+    opacity: 0.75;
+    filter: blur(4px);
+}
+
+
+@keyframes servicesGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+.about {
+    position: relative;
+    overflow: hidden; 
+}
+
+
+.about-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+.about-shapes div {
+    position: absolute;
+    opacity: 0.25;
+    animation: float 6s ease-in-out infinite, rotate 12s linear infinite;
+}
+
+
+.about-shapes .circle {
+    width: 70px;
+    height: 70px;
+    background: #a634db;
+    border-radius: 50%;
+}
+
+.about-shapes .square {
+    width: 60px;
+    height: 60px;
+    background: #2980b9;
+    animation-duration: 10s, 16s;
+}
+
+
+.about-shapes .triangle {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 70px solid #e74c3c;
+    animation-duration: 8s, 14s;
+}
+
+
+
+@keyframes float {
+    0%   { transform: translateY(0px) scale(1); }
+    50%  { transform: translateY(-25px) scale(1.1); }
+    100% { transform: translateY(0px) scale(1); }
+}
+
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+
+.about-shapes .circle:nth-child(1) { top: 10%; left: 15%; animation-delay: 0s; }
+.about-shapes .circle:nth-child(2) { top: 70%; left: 80%; animation-delay: 2s; }
+
+.about-shapes .square:nth-child(3) { top: 30%; left: 60%; animation-delay: 1s; }
+.about-shapes .square:nth-child(4) { top: 80%; left: 25%; animation-delay: 3s; }
+
+.about-shapes .triangle:nth-child(5) { top: 50%; left: 10%; animation-delay: 0.5s; }
+.about-shapes .triangle:nth-child(6) { top: 15%; left: 75%; animation-delay: 2.5s; }
