@@ -30,6 +30,8 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/custom.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -838,6 +840,94 @@
       </div>
 
     </section><!-- /Contact Section -->
+
+    <section id="memory-game">
+    <h2>Mano Žaidimas</h2>
+    
+    <div class="game-header">
+        <div class="difficulty-selector">
+            <button class="difficulty-btn easy active" data-difficulty="easy">Lengvas (4×3)</button>
+            <button class="difficulty-btn hard" data-difficulty="hard">Sunkus (6×4)</button>
+        </div>
+    </div>
+    
+    <div class="game-container">
+        <div class="game-board-container">
+            <div class="game-board" id="game-board">
+                <!-- Kortelės bus sugeneruotos JavaScript -->
+            </div>
+            
+            <div class="controls">
+                <button class="control-btn start" id="start-btn">
+                    <i class="fas fa-play"></i> Pradėti žaidimą
+                </button>
+                <button class="control-btn reset" id="reset-btn">
+                    <i class="fas fa-redo"></i> Žaisti iš naujo
+                </button>
+            </div>
+        </div>
+        
+        <div class="stats-container">
+            <h3>Statistika</h3>
+            <div class="stat">
+                <div class="stat-value" id="moves">0</div>
+                <div class="stat-label">Bendras ėjimų skaičius</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="matches">0</div>
+                <div class="stat-label">Sutapusių porų skaičius</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="timer">0</div>
+                <div class="stat-label">Sekundės</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="total-pairs">6</div>
+                <div class="stat-label">Iš viso porų</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="best-scores-container">
+    <h3><i class="fas fa-trophy"></i> Geriausi rezultatai</h3>
+    <div class="best-scores-grid">
+        <div class="best-score-card easy">
+            <div class="best-score-header">Lengvas lygis</div>
+            <div class="best-score-content" id="best-score-easy">
+                <div class="no-score">Dar nėra rezultato</div>
+            </div>
+        </div>
+        <div class="best-score-card hard">
+            <div class="best-score-header">Sunkus lygis</div>
+            <div class="best-score-content" id="best-score-hard">
+                <div class="no-score">Dar nėra rezultato</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="win-message" id="win-message">
+        <h3><i class="fas fa-trophy"></i> Sveikiname! Jūs laimėjote!</h3>
+        <p>Sėkmingai radote visas kortelių poras!</p>
+        
+        <div class="win-stats">
+            <div class="win-stat">
+                <div class="win-stat-value" id="final-moves">0</div>
+                <div class="win-stat-label">Ėjimų</div>
+            </div>
+            <div class="win-stat">
+                <div class="win-stat-value" id="final-time">0</div>
+                <div class="win-stat-label">Sekundžių</div>
+            </div>
+            <div class="win-stat">
+                <div class="win-stat-value" id="final-pairs">6</div>
+                <div class="win-stat-label">Porų</div>
+            </div>
+        </div>
+        
+        <p style="margin-top: 20px;">Norite žaisti dar kartą? Paspauskite "Žaisti iš naujo" mygtuką!</p>
+    </div>
+</section>
 
   </main>
 
